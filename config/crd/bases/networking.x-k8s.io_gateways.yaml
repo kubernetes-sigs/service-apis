@@ -91,7 +91,6 @@ spec:
                           default: networking.x-k8s.io
                           description: "Group is the group of the route resource to select. Omitting the value or specifying the empty string indicates the networking.x-k8s.io API group. For example, use the following to select an HTTPRoute: \n routes:   kind: HTTPRoute \n Otherwise, if an alternative API group is desired, specify the desired group: \n routes:   group: acme.io   kind: FooRoute \n Support: Core"
                           maxLength: 253
-                          minLength: 1
                           type: string
                         kind:
                           description: "Kind is the kind of the route resource to select. \n Kind MUST correspond to kinds of routes that are compatible with the application protocol specified in the Listener's Protocol field. \n If an implementation does not support or recognize this resource type, it SHOULD set the \"ResolvedRefs\" condition to false for this listener with the \"InvalidRoutesRef\" reason. \n Support: Core"
@@ -182,7 +181,6 @@ spec:
                             group:
                               description: Group is the group of the referent.
                               maxLength: 253
-                              minLength: 1
                               type: string
                             kind:
                               description: Kind is kind of the referent.
