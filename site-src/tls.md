@@ -45,7 +45,7 @@ listeners:
     mode: Terminate
     certificateRef:
       kind: Secret
-      group: core
+      group: ""
       name: default-cert
     routeOverride:
       certificate: Deny
